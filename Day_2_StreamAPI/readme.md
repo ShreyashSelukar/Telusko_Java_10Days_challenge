@@ -62,7 +62,7 @@ Products = [
             System.out.println("No data found");
      }
   
-    **  Assignment 3 : Using stream**
+    **  Assignment 3 : Using stream API**
      public List<Product> getOutOfWarrantyProduct(int currentYear) {
       
             return products.stream()
