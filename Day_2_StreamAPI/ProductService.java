@@ -17,7 +17,7 @@ public class ProductService {
 
     public Product getProductByPlace(String place){
         return products.stream()
-                .filter(p -> (p.getPlace().equals(place)))
+                .filter(p -> (p.getPlace().toLowerCase().equals(place.toLowerCase())))
                 .findFirst()
                 .orElse(null);
     }
