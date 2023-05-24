@@ -63,7 +63,8 @@ Products = [
      }
      
    **Assignment 3 : Using stream API**
-     public List<Product> getOutOfWarrantyProduct(int currentYear) {
+     
+    public List<Product> getOutOfWarrantyProduct(int currentYear) {
       
             return products.stream()
                     .filter(p -> (p.getWarranty() < currentYear))
