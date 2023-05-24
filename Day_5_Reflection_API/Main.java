@@ -4,23 +4,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-
-
-class Apple implements interfaceData
-{
-    private void repair() {
-        System.out.println("Repairing");
-    }
-    private void repair(int cost) {
-        System.out.println("Repairing : " + cost);
-    }
-
-    @Override
-    public void showInterface() {
-        System.out.println("In the interface");
-    }
-}
-
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("====================================");
