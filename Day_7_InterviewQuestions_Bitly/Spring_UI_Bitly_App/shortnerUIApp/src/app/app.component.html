@@ -1,0 +1,16 @@
+<div class="main-con">
+  <div class="container">
+    <h1>URL Shortener</h1>
+   <div>
+    <input class="input-url" type="text" [(ngModel)]="urlInput" id="urlInput" placeholder="Enter URL">
+    <span (click)="urlInput = ''"><img class="img-icon" src="../assets/cancel.png"></span>
+    <button (click)="generateShortURL()">Submit</button>
+  </div>
+    <div class="main-res" *ngIf="shortURL">
+      <p>{{shortURL}}</p>
+      <button (click)="copyText(shortURL)" value="click to copy" 
+      [ngClass]="{copied: copyAction == 'Copied'}"
+      >{{copyAction}}</button>
+    </div>
+  </div>
+</div>
