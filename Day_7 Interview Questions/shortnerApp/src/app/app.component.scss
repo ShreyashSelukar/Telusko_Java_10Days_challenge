@@ -1,0 +1,224 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  label{
+    color: #333;
+  }
+
+  .card input {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+  }
+
+  .card label {
+    font-weight: bold;
+  }
+
+  .card .buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+  }
+
+  .card:hover .buttons {
+    display: block;
+  }
+
+//   .card button {
+//     padding: 5px;
+//     background-color: transparent;
+//     border: none;
+//     cursor: pointer;
+//     transition: color 0.3s ease-in-out;
+//   }
+
+//   .card button:hover {
+//     color: #4CAF50;
+//   }
+
+
+
+
+
+  ////////////////////
+.main-container {
+  display: flex;
+  margin: 100px 50px 100px 50px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-one {
+  flex: 35%;
+}
+
+.section-two {
+  flex: 65%;
+  background: #ffffff;
+    border-radius: 11px;
+    padding: 20px;
+    height: 66vh;
+
+}
+
+// .card {
+//   width: 80%;
+//   padding: 20px;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   background-color: #f9f9f9;
+// }
+
+// .card .buttons {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   display: none;
+// }
+
+// .card:hover .buttons {
+//   display: block;
+// }
+
+// .card input {
+//   display: block;
+//   width: 100%;
+//   margin-bottom: 10px;
+//   padding: 5px;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+// }
+
+// .card label {
+//   font-weight: bold;
+// }
+
+// .card button {
+//   padding: 5px;
+//   background-color: transparent;
+//   border: none;
+//   cursor: pointer;
+//   transition: color 0.3s ease-in-out;
+// }
+
+// .card button:hover {
+//   color: #4CAF50;
+// }
+
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  
+  .product_data{
+    
+    overflow-y: overlay;
+    height: 66vh;
+  }
+  .product {
+    position: relative;
+    width: 300px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-name {
+    margin: 0;
+    color: #333;
+  }
+  
+  .product-type,
+  .product-place,
+  .product-warranty {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product:hover .delete-icon {
+    opacity: 1;
+  }
+  
+  .delete-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .delete-icon:hover {
+    // background-color: red;
+    border: 1px solid rgb(235, 111, 111);
+    border-radius: 5px;
+  }
+
+.form-data{
+padding: 25px;
+}
+.jsCentre{
+    justify-content: center;
+    display: flex;
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ff8c00;
+  }
+  .product-header{
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    z-index: 99999;
+    padding: 10px;
+  }
