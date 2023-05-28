@@ -1,0 +1,50 @@
+1. final, finally, finalize
+2. Method overloading vs method overriding
+3. Comparable vs comparator
+4. Clone of bit.ly(goog.ly)
+
+// final = is keyword/modifier used to create a constant variable
+        // once created, value cannot be changed
+        // can be used with methods as well as classes
+
+when we use final with class, it becomes a class which cannot be inherited
+if we don't want polymorphism and overriding, we use final in methods
+
+final with variables, makes them constant
+
+finally is a block which executes even if we get exception or not (clean up resources)
+it is used to close everything(ex, database connection)
+
+finalize - part of object class
+every class in Java extends to object class
+it has multiple method
+one of the method is finalize
+just before garbage collector do it's job, finalize can be used for any work to be done in end
+
+finalize is deprecated in Java 9
+
+System.gc() is used to call Garbage collector
+to do anything in finalize, we need to use System.gc() but it's not recommended
+
+but if you want to do something in the end, then use try with resources
+
+try-with-resources statement, which allows for automatic resource management.
+close() or dispose(), is preferred over relying on the finalize() method.
+
+Polymorphism is used for method overriding
+different class and same methods with different behaviors - called as polymorphism
+
+Polymorphism
+ - Method overloading (compile-time Polymorphism)
+ - Method overriding (run-time Polymorphism)
+
+Is method overloading is part of Polymorphism?
+It's actually a type of compile - time Polymorphism
+Because at compile time we know which is called based on argument
+
+Some people do not consider method overloading as part of Polymorphism
+
+Comparable and comparator - are two interfaces in Java
+Difference between them
+Comparator when you want to give logic yourself
+Comparable is a class when you want to give power to class
