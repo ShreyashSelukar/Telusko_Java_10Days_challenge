@@ -1,0 +1,13 @@
+<div class="main-con">
+  <div class="container">
+    <h1>URL Shortener</h1>
+    <input type="text" id="urlInput" placeholder="Enter URL">
+    <button (click)="generateShortURL()">Submit</button>
+    <div class="main-res">
+      <p>{{url}}</p>
+      <button (click)="copyText('acs')" value="click to copy" 
+      [ngClass]="{copied: copyAction == 'Copied'}"
+      >{{copyAction}}</button>
+    </div>
+  </div>
+</div>
