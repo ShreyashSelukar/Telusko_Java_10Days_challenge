@@ -27,8 +27,8 @@ export class Service {
     return this.http.post<URL>(`${this.apiUrl}/url`, inputText);
   }
 
-  deleteProduct(id: number): Observable<void> {
-    const url = `${this.apiUrl}/product/${id}`;
-    return this.http.delete<void>(url);
-  }
+//   deleteProduct(id: number): Observable<void> {
+//     const url = `${this.apiUrl}/product/${id}`;
+//     return this.http.delete<void>(url);
+//   }
 }
