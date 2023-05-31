@@ -1,0 +1,60 @@
+<div class="main-con">
+  <div class="form-div">
+    <h3>Create Question</h3>
+    <form [formGroup]="quizForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Question</mat-label>
+          <input matInput formControlName="question" placeholder="Enter the question">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Option A</mat-label>
+          <input matInput formControlName="optiona" placeholder="Enter option A">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Option B</mat-label>
+          <input matInput formControlName="optionb" placeholder="Enter option B">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Option C</mat-label>
+          <input matInput formControlName="optionc" placeholder="Enter option C">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Option D</mat-label>
+          <input matInput formControlName="optiond" placeholder="Enter option D">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Answer</mat-label>
+          <input matInput formControlName="answer" placeholder="Enter the answer">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+          <mat-label>Type</mat-label>
+          <input matInput formControlName="type" placeholder="Enter the type">
+        </mat-form-field>
+      
+        <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+      </form>
+  </div>
+  <div class="data-container"> 
+    <h3>List of Questions</h3>
+    <ul>
+      <hr>
+      <li *ngFor="let q of questions; let i = index">
+        <div style="display:flex">
+            <span class="index-q">Q.{{i+1}} : </span><span class="question-span">{{ q.question }} </span>
+            <div style="display:flex" class="options">
+                <span class="show-more" (click)="openQuestions(q)">Show more</span>
+                <span class="show-more delete" (click)="deleteQuestion(q)">Delete</span>
+                <span class="show-more update" (click)="updateQuestion(q)">Update</span>
+            </div>
+        </div>
+        <hr>
+    </li>
+    </ul>
+  </div>
+</div>

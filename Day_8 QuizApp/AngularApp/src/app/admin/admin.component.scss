@@ -1,0 +1,88 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+mat-form-field {
+  margin-bottom: 16px;
+}
+
+button {
+  align-self: center;
+}
+
+
+.form-div{
+  width: 20vw;
+  padding: 25px;
+  border: 1px solid;
+
+}
+
+.main-con{
+  display: flex;
+  width: 80vw;
+  /* margin: 26px; */
+  top: 70px;
+  position: relative;
+  background: antiquewhite;
+  padding: 20px;
+}
+.data-container{
+  width: 60vw;
+  padding: 20px;
+  border: 1px solid;
+}
+  
+body{
+  background-color: #fff3f3 !important;
+}
+.index-q{
+  margin-right: 12px;
+}
+.show-more{
+     /* float: right; */
+     border: 1px solid;
+     border-radius: 5px;
+     font-size: 12px;
+     /* display: flex; */
+     /* flex-direction: row; */
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     padding: 2px;
+     /* position: initial; */
+     /*  */
+     /*  */
+     /* right: 40px; */
+     /* position: absolute;*/
+}
+.question-span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
+  
+}
+hr{
+  width: 70%;
+}
+
+::ng-deep .cdk-overlay-container{
+  position: absolute;
+}
+.delete{
+
+}
+.update{
+
+}
+.options{
+  display: flex;
+    flex-wrap: nowrap;
+    width: 25%;
+    justify-content: space-around;
+}

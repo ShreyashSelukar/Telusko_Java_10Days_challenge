@@ -1,0 +1,36 @@
+<div>
+      
+  <div class="option-type" *ngIf="!type">
+    <h3>Select your Question Type</h3>
+    <div class="dropdown" >
+        <select class="select-drop" [(ngModel)]="type" (change)="onOptionSelected()">
+          <option value="" disabled selected>Select an option</option>
+          <option [value]="q"  *ngFor="let q of typeOfQuestions; let i = index">{{q}}</option>
+        </select>
+      </div>
+    <button (click)="togohome()" class="btn-exit">Exit Quiz</button>
+  </div>
+  <div id="quiz-container" class="color-class" *ngIf="type && !finished">
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+      <div class="question" *ngFor="let q of quizQuestionList; let i = index" >
+        <h3>Question {{i+1}}:</h3>
+        <p>{{q.question}}</p>
+        <div id="q.question">
+            <input type="radio" [(ngModel)]="q.selectedAnswers" value="{{q.optiona}}" name="{{i}}"> {{q.optiona}}<br>
+        <input type="radio" [(ngModel)]="q.selectedAnswers" value="{{q.optionb}}" name="{{i}}" > {{q.optionb}}<br>
+        <input type="radio" [(ngModel)]="q.selectedAnswers" value="{{q.optionc}}"   name="{{i}}"> {{q.optionc}}<br>
+        <input type="radio" [(ngModel)]="q.selectedAnswers" value="{{q.optiond}}"  name="{{i}}" > {{q.optiond}}<br>
+        </div>
+      </div>
+      
+      <!-- Add more questions here -->
+      
+      <button type="submit"  class="btn-exit submit" (click)="submitQuiz()" value="Submit">Submit</button>
+    </form>
+  </div>
+  <div *ngIf="finished" class="score">
+    Your Score is : {{score}} out of {{quizQuestionList.length}}
+    <button (click)="togohome()" class="btn-exit">Exit Quiz</button>
+  </div>
+</div>
