@@ -1,0 +1,31 @@
+Instead of ':' and break we can use "->".
+Use this in whole switch block.
+
+Now convert switch statement into a switch expression
+
+Now to use switch expression with ":", use yield
+
+Along with Scanner, we have BufferedReader to take input
+
+
+var - always initialize default value during declaration
+var num = 9;
+var cannot be used as
+var was used as Identifier in Java earlier
+
+<html>
+</html>
+<body>
+</body>
+
+
+
+Abstract class are meant to be inhereted
+
+opposite of abstract class is final
+
+
+1. Switch expression
+2. var
+3. Sealed classes
+4. record class
